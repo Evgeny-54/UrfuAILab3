@@ -42,17 +42,16 @@
 
 ### Решение задачи 1
 
+Мы предлогаем менять только переменные: период сбрасывания и скорость перемещения дракона
 
 <picture>
 
- <img alt="point1.png" src="https://github.com/Evgeny-54/UrfuAI/blob/main/point1.png">
+ <img alt="levels.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/levels.png">
 </picture>
 
-```py
+[Ссылка на таблицу](https://docs.google.com/spreadsheets/d/1AlahhKJT6tQesSFKg86LYb-bF0ZYSNrAWfgxTqexxpc/edit#gid=0)
 
-print("Hello World)
 
-```
 
 
 
