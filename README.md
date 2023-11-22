@@ -57,35 +57,20 @@
 
 
 ## Задание 2
-### Написать программу Hello World на C# с запуском на Unity.
-<picture>
+Создайте 10 сцен на Unity с изменяющимся уровнем сложности.
 
- <img alt="point2.png" src="https://github.com/Evgeny-54/UrfuAI/blob/main/point2.png">
-</picture>
+### Решение задачи 2
 
-```c#
+> Картинка будет позже, а пока её украли жители с планеты Альфа-Центавр. Извините...
 
-using UnityEngine;
+Созданные сцены в Unity можно найти в папке _Scenes этого репозитория
 
-public class Hello : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log(" Hello World");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-}
-
-
-```
 ## Задание 3
-Оформить отчет в виде документации на github (markdown-разметка).
+Решение в 80+ баллов должно заполнять google-таблицу данными из Python. В Python данные также должны быть визуализированы.
+
+### Решение задачи 3
+
+Мы предлогаем менять только переменные: период сбрасывания и скорость перемещения дракона
 
 
 ## Выводы
