@@ -61,14 +61,13 @@
 
 ### Решение задачи 2
 
-
+Созданные сцены в Unity можно найти в папке _Scenes этого репозитория
 
 <picture>
 
  <img alt="levels.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/Unity.png">
 </picture>
 
-Созданные сцены в Unity можно найти в папке _Scenes этого репозитория
 
 ## Задание 3
 Решение в 80+ баллов должно заполнять google-таблицу данными из Python. В Python данные также должны быть визуализированы.
