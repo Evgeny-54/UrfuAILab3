@@ -74,7 +74,42 @@
 
 ### Решение задачи 3
 
-> Решение будет позже, а пока его украли жители с планеты Альфа-Центавр. Извините...
+Заполняем таблицу данными. Далее строим график изменения уровня сложности с помощью билиотеки "matplotlib", которую надо предварительно установить.
+
+```py
+%matplotlib inline
+
+import gspread
+import numpy as np
+import matplotlib.pyplot as plt
+gc = gspread.service_account(filename='taxi-334215-2d8d3f211c81.json')
+sh = gc.open("unityAI32")
+row = ['B','C','D','E','F','G','H','I','J','K']
+
+speed = [4.00, 4.00,5.00,5.00,6.00,6.00,7.00,7.00,8.00,9.00]
+time = [2.00,1.00,2.00,1.00,1.00,0.90,0.90,0.70,0.70,0.50]
+
+i = 0
+
+while i < len(speed):
+    sh.sheet1.update((row[i] + str(3)), int(speed[i]))
+    i+=1
+i = 0
+while i < len(time):
+    sh.sheet1.update((row[i] + str(3)), int(time[i]))
+    i+=1
+
+levels = []
+
+i = 0
+while i < len(speed):
+    levels.append(speed[i]/time[i])
+    i+=1
+
+x = [1,2,3,4,5,6,7,8,9,10]
+
+plt.plot (x, levels)
+```
 
 
 ## Выводы
