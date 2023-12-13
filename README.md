@@ -65,7 +65,7 @@
 
 <picture>
 
- <img alt="levels.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/Unity.png">
+ <img alt="Unity.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/Unity.png">
 </picture>
 
 
@@ -74,7 +74,14 @@
 
 ### Решение задачи 3
 
-Заполняем таблицу данными. Далее строим график изменения уровня сложности с помощью билиотеки "matplotlib", которую надо предварительно установить.
+Заполняем таблицу данными. Далее строим графики изменения уровня сложностиm, скорости и периода  сбрасывания с помощью билиотеки "matplotlib", которую надо предварительно установить.
+
+<picture>
+
+ <img alt="sh.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/sh.png">
+</picture>
+
+
 
 ```py
 %matplotlib inline
@@ -83,7 +90,7 @@ import gspread
 import numpy as np
 import matplotlib.pyplot as plt
 gc = gspread.service_account(filename='taxi-334215-2d8d3f211c81.json')
-sh = gc.open("unityAI32")
+sh = gc.open("unityAI3")
 row = ['B','C','D','E','F','G','H','I','J','K']
 
 speed = [4.00, 4.00,5.00,5.00,6.00,6.00,7.00,7.00,8.00,9.00]
@@ -108,7 +115,13 @@ while i < len(speed):
 
 x = [1,2,3,4,5,6,7,8,9,10]
 
-plt.plot (x, levels)
+plt.subplot(211)
+print("График изменения уровня сложности")
+plt.plot (x, levels,'ro')
+plt.subplot(212)
+print("График изменения скорости и периода сбрасывания")
+plt.plot (x, speed)
+plt.plot (x, time)
 ```
 
 
