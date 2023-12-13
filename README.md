@@ -46,7 +46,7 @@
 
 <picture>
 
- <img alt="levels.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/levels.png">
+ <img alt="table.png" src="https://github.com/Evgeny-54/UrfuAILab3/blob/main/table.png">
 </picture>
 
 [Ссылка на таблицу](https://docs.google.com/spreadsheets/d/1AlahhKJT6tQesSFKg86LYb-bF0ZYSNrAWfgxTqexxpc/edit#gid=0)
